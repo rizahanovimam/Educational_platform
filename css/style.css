@@ -71,7 +71,7 @@ body {
 .logo span {
     color: var(--primary);
     background: var(--bg-gradient);
-    /* -webkit-background-clip: text;   */
+    -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
 }
 
@@ -236,7 +236,7 @@ body {
 .footer-logo span {
     color: var(--primary);
     background: var(--bg-gradient);
-    /* -webkit-background-clip: text;  */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 
