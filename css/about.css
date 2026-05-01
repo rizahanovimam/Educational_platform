@@ -253,7 +253,6 @@
 
 
 
-
 /* Бесплатные лекции */
 .free-lectures {
     padding: 60px 0;
@@ -413,10 +412,6 @@
     transform: translateY(-2px);
     box-shadow: 0 20px 30px -8px rgba(0,0,0,0.3);
 }
-
-
-
-
 
 
 
@@ -682,8 +677,4 @@
         padding: 12px 30px;
     }
 }
-
-
-
-
 
