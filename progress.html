@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё обучение</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Образовательная<span>Платформа</span></a>
+                <div class="nav-links">
+                    <a href="index.html">Главная</a>
+                    <a href="courses.html" class="active">Моё обучение</a>
+                    <a href="about.html">О проекте</a>
+                </div>
+                <div class="nav-buttons">
+                    <div class="user-info">
+                        <span>Имам</span>
+                        <div class="user-avatar">Р</div>
+                    </div>
+                </div>
+                <!-- <button class="mobile-menu-btn"></button> -->
+            </div>
+        </div>
+    </nav>
+
+    <section class="course-page">
+        <div class="container">
+            <div class="course-header">
+                <div>
+                    <h1>Указатели в C++: от адресной арифметики до умных указателей</h1>
+                </div>
+                <div class="course-header-actions">
+                    <button class="btn-secondary" onclick="window.location.href='courses.html'">
+                        Назад
+                    </button>
+                    <button class="btn btn-primary btn-large" onclick="window.location.href='dashboard.html'">
+                        Продолжить обучение
+                    </button>
+                </div>
+            </div>
+            
+            <div class="course-stats">
+                <div class="stat">
+                    <span>8 модулей</span>
+                </div>
+                <div class="stat">
+                    <span>42 задачи</span>
+                </div>
+            </div>
+            
+            <div class="course-modules">
+                <h2>Программа курса</h2>
+                
+                <div class="module-list">
+                    <div class="module-item">
+                        <div class="module-header">
+                            <div>
+                                <h3>Модуль 1. Основы указателей</h3>
+                                <p>Объявление, инициализация, оператор & и разыменование *</p>
+                            </div>
+                            <span class="module-status completed">
+                                Завершено
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-item current">
+                        <div class="module-header">
+                            <div>
+                                <h3>Модуль 2. Арифметика указателей и работа с массивами</h3>
+                                <p>Как перемещаться по памяти, отличие имени массива от указателя.</p>
+                            </div>
+                            <span class="module-status in-progress">
+                                В процессе...
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-item">
+                        <div class="module-header">
+                            <div>
+                                <h3>Модуль 3. Указатели как параметры функций</h3>
+                                <p>Передача по указателю, изменение переменных внутри функции, возврат указателя из функции</p>
+                            </div>
+                            <span class="module-status locked">
+                                Закрыто
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-item">
+                        <div class="module-header">
+                            <div>
+                                <h3>Модуль 4. Динамическая память и операторы new / delete</h3>
+                                <p>Создание объектов в куче, ручное освобождение памяти, опасность утечек и висячих указателей</p>
+                            </div>
+                            <span class="module-status locked">
+                                Закрыто
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-item">
+                        <div class="module-header">
+                            <div>
+                                <h3>Модуль 5. Умные указатели</h3>
+                                <p>Автоматическое управление временем жизни объектов, как избежать утечек памяти и двойного удаления, почему прямое управление памятью через new/delete опасно в современных проектах</p>
+                            </div>
+                            <span class="module-status locked">
+                                Закрыто
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
+</body>
+</html>

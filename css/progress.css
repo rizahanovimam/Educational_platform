@@ -1,0 +1,150 @@
+.course-page {
+    padding: 120px 0 60px;
+    background: var(--light);
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.course-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.course-stats {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.course-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gray);
+}
+
+.course-modules {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    padding: 32px;
+    margin-bottom: 40px;
+}
+
+.course-modules h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.module-item {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.module-item:hover {
+    border-color: var(--primary);
+}
+
+.module-item.current {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px -4px rgba(37,99,235,0.1);
+}
+
+.module-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.module-header h3 {
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.module-header p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.module-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.module-status.completed {
+    color: var(--success);
+}
+
+.module-status.in-progress {
+    color: var(--warning);
+}
+
+.module-status.locked {
+    color: var(--gray);
+}
+
+.course-header-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-secondary {
+    background: #f3f4f6;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-secondary:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+.btn-large {
+    padding: 12px 28px;
+    font-size: 16px;
+}
+
+
+/* Адаптивность для страницы курса */
+@media (max-width: 768px) {
+    .course-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .module-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}

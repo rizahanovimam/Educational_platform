@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Образовательная<span>Платформа</span></a>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Главная</a>
+                    <a href="courses.html">Моё обучение</a>
+                    <a href="about.html">О проекте</a>
+                </div>
+                <div class="nav-buttons">
+                    <div class="user-info">  <!--.................-->
+                        <span>Имам</span>
+                        <div class="user-avatar">Р</div>  <!--.................-->
+                    </div>
+                </div>
+                <!-- <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>   ................. -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция с ИИ-чатом -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Персональный ИИ-наставник, <span>который доведёт до результата</span></h1>
+                    <p class="hero-subtitle">Не очередной курс, а умный преподаватель, который строит индивидуальную программу под твой уровень и цели</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-large" onclick="window.location.href='courses.html'">
+                            Пройти диагностику
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="window.location.href='about.html'">
+                            Как это работает
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-chat">
+                    <div class="chat-card">
+                        <div class="chat-header"></div>
+                        <div class="chat-messages">
+                            <div class="message ai"> 
+                                <div class="message-avatar">
+                                    ии
+                                </div>
+                                <div class="message-content">
+                                    Привет! Я ИИ-наставник. Расскажи, что хочешь изучить?
+                                </div>
+                            </div>
+                            <div class="message user">
+                                <div class="message-avatar">
+                                     я
+                                </div>
+                                <div class="message-content">
+                                    Хочу разобраться с управлением памятью в C++
+                                </div>
+                            </div>
+                            <div class="message ai">
+                                <div class="message-avatar">
+                                    ии
+                                </div>
+                                <div class="message-content">
+                                    <p>Отлично! Ответь развернуто на несколько вопросов, чтобы я смог построить программу обучения:</p>
+                                    <p> • Какой у тебя уровень владения C++?</p>
+                                    <p> • Какие цели обучения?</p>
+                                    <p> • Есть ли конкретные темы, которые хочешь изучить?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-header">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Почему обычное обучение менее эфективно -->
+    <section class="problems">
+        <div class="container">
+            <h2 class="section-title">Почему <span>обычное обучение</span> менее эфективно?</h2>
+            
+            <div class="problems-grid">
+                <div class="problem-card plitka">
+                    <h3>Непонятный материал</h3>
+                    <p>В учебниках написано сложно, а репетитор дорого. ИИ объяснит несколько раз по-разному, пока не поймёшь</p>
+                </div>
+                <div class="problem-card plitka">
+                    <h3>Не знаю с чего начать</h3>
+                    <p>ИИ проводит диагностику и строит чёткую программу именно под твой уровень</p>
+                </div>
+                <div class="problem-card plitka">
+                    <h3>Дорогие репетиторы</h3>
+                    <p>Платишь не за часы, а за результат. В 3-5 раз дешевле обычных занятий</p>
+                </div>
+                <div class="problem-card plitka">
+                    <h3>Нет вектора развития</h3>
+                    <p>ИИ следует программе, но позволяет углубляться в термины, не теряя основной вектор</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как строится твой путь -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как строится <span>твой путь</span></h2>
+            
+            <div class="steps-grid">
+                <div class="step-card plitka">
+                    <div class="step-number">1</div>
+                    <h3>Диагностика</h3>
+                    <p>ИИ-терапевт беседует с тобой, определяет уровень, цели и строит программу</p>
+                </div>
+                <div class="step-card plitka">
+                    <div class="step-number">2</div>
+                    <h3>Индивидуальная цена</h3>
+                    <p>Платишь только за те темы, которые реально нужно изучить. Никакой переплаты за базу, которую уже знаешь</p>
+                </div>
+                <div class="step-card plitka">
+                    <div class="step-number">3</div>
+                    <h3>Обучение с наставником</h3>
+                    <p>Отдельный чат с ИИ-преподавателем, который ведёт по программе и отвечает на вопросы</p>
+                </div>
+                <div class="step-card plitka">
+                    <div class="step-number">4</div>
+                    <h3>Измеримый результат</h3>
+                    <p>В конце решаешь ту же задачу, что в начале — и видишь свой прогресс</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">Образовательная<span>Платформа</span></div>
+                    <p>ИИ-наставник, который доведёт до результата.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="courses.html">Моё обучение</a>
+                    <a href="about.html">О проекте</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <a href="#">VK</a>
+                    <a href="#">Max</a>
+                    <a href="#">Telegram</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p></i> rizahanovimam@mail.ru</p>
+                    <p></i> г. Ставрополь</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Платишь не за курс, а за навык</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

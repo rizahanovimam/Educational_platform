@@ -1,0 +1,445 @@
+* {   /* было 2139 строк */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1d5eea; /*  #eb2574     Ярко-синий */
+    --primary-dark: #1d4ed8;  /* Темно-синий */
+    --primary-light: #3376e1; /* Светло-синий */
+    --primary-hover-border: #799fff; /* Цвет обводки плиток при наведении мыши */
+    --secondary: #0ea5e9;     /* Голубой */
+    --accent: #38bdf8;        /* Акцент */
+    --bg-dark-content: linear-gradient(135deg, #f3faff, #f0f9ff);
+    --bg-light-content: linear-gradient(135deg, #ffffff, #ffffff);
+
+    
+    --dark: #0f172a;
+    --gray-dark: #334155;
+    --gray: #64748b;
+    --gray-light: #94a3b8;
+    --light: #f8fafc;
+    --border: #e2e8f0;
+    
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    
+    --bg-gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+    background: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/*------------------       Навигация        ----------------------*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.nav-content {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark);
+    /* letter-spacing: -0.5px; */
+}
+
+.logo span {
+    color: var(--primary);
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+/* ----------------------------------------------------------------------------- */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+
+/*--------------------       Кнопки       -----------------*/
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+
+    background: var(--bg-gradient);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary {}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px -1px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--dark);
+}
+
+.btn-outline:hover {
+    background: var(--light);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-large {
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+
+
+.mobile-menu-btn { /* убрал и сбилась навигация */
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+
+
+
+/* Анимация для плиток */
+.plitka {
+    transition: all 0.2s;
+}
+.plitka:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -8px rgba(37, 99, 235, 0.15);
+    border-color: var(--primary-hover-border);
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+/*-------------      Футер     -------------*/
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.footer-logo span {
+    color: var(--primary);
+    background: var(--bg-gradient);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-col p {
+    color: var(--gray-light);
+    font-size: 14px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-col a {
+    display: block;
+    color: var(--gray-light);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-col i {
+    margin-right: 8px;
+    color: var(--primary);
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: var(--gray-light);
+    font-size: 14px;
+}
+/* ------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+/* Стили для заголовуов блоков с плитами */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-title span {
+    color: var(--primary);
+}
+
+
+
+
+
+/* Цифры информация в начале страницы */
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////      Dashboard      /////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////   Страница о проекте     ///////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+/* ========== АДАПТИВНОСТЬ ========== */
+/* Планшеты и маленькие ноутбуки (1024px и меньше) */
+@media (max-width: 1024px) {
+    /* Футер /////////////////////////////*/
+    .footer {
+        padding-left: 60px;
+        /* border: 1px solid red; */
+    }
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+/* Мобильные устройства (768px и меньше) */
+@media (max-width: 768px) {
+    /* Навигация //////////////////////*/
+    .nav-links {
+        display: none;
+    }
+    /* ......................... */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-content {
+        height: 70px;
+    }
+    
+    .logo {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    /* Футер */
+    .footer {
+        padding: 40px 0 20px;
+        /* border: 1px solid red; */
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        align-items: center;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    
+    .footer-col h4 {
+        margin-bottom: 12px;
+    }
+    
+    .footer-col a {
+        margin-bottom: 8px;
+    }
+    
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

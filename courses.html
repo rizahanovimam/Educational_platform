@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё обучение</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Образовательная<span>Платформа</span></a>
+                <div class="nav-links">
+                    <a href="index.html">Главная</a>
+                    <a href="courses.html" class="active">Моё обучение</a>
+                    <a href="about.html">О проекте</a>
+                </div>
+                <div class="nav-buttons">
+                    <div class="user-info">
+                        <span>Имам</span>
+                        <div class="user-avatar">Р</div>
+                    </div>
+                </div>
+                <!-- <button class="mobile-menu-btn"></i></button> -->
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-learning-page">
+        <div class="container">
+            <h1 class="page-title">Моё обучение</h1>
+
+            <!-- Секция с оплаченными курсами -->
+            <div class="courses-section">
+                <h2>Мои курсы</h2>
+                <div class="courses-grid">
+                    <!-- Курс -->
+                    <div class="course-card plitka">
+                        <div class="course-card-header">
+                            <h3>Указатели в C++: от адресной арифметики до умных указателей</h3>
+                        </div>
+                        <div class="course-card-body">
+                            <div class="course-progress-info">
+                                <div class="progress-label">
+                                    <span>Прогресс обучения</span>
+                                    <span>19%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" style="width: 19%;"></div>
+                                </div>
+                            </div>
+                            <div class="course-stats-mini">
+                                <span> 5 модулей</span>
+                                <span> 42 задачи</span>
+                            </div>
+                            <div class="course-buttons">
+                                <button class="btn btn-large" onclick="window.location.href='dashboard.html'">
+                                    Продолжить
+                                </button>
+                                <button class="btn btn-outline" onclick="window.location.href='progress.html'">
+                                    Посмотреть прогресс
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Широкий чат с ИИ-терапевтом (диагностика) -->
+            <div class="diagnostic-section">
+                <div class="diagnostic-header">
+                    <h2> ИИ-консультант </h2>
+                    <p>Помогу определить твой уровень, подобрать программу обучения и ответить на вопросы</p>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-messages-area" id="chat-messages">
+                        <div class="message ai">
+                            <div class="message-avatar">
+                                ИИ
+                            </div>
+                            <div class="message-content">
+                                Привет! Я ИИ-консультант.<br><br>
+                                Давай познакомимся. Расскажи немного о себе:<br>
+                                • Какой у тебя уровень владения C++? (начинающий / средний / продвинутый)<br>
+                                • Какие цели обучения? (трудоустройство / повышение квалификации / сдача экзамена)<br>
+                                • Есть ли конкретные темы, которые хочешь изучить?<br><br>
+                                Напиши свои ответы, и я помогу подобрать идеальную программу обучения!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-wrapper">
+                        <textarea id="chat-input" placeholder="Напиши сообщение ИИ-консультанту..." rows="1"></textarea>
+                        <button class="chat-send-btn" onclick="sendMessage()">
+                            <span>></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">Образовательная<span>Платформа</span></div>
+                    <p>ИИ-наставник, который доведёт до результата.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="courses.html">Моё обучение</a>
+                    <a href="about.html">О проекте</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Социальные сети</h4>
+                    <a href="#">VK</a>
+                    <a href="#">Max</a>
+                    <a href="#">Telegram</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p></i> rizahanovimam@mail.ru</p>
+                    <p></i> г. Ставрополь</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Платишь не за курс, а за навык</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    </script>
+</body>
+</html>
