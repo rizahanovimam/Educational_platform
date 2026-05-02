@@ -226,6 +226,9 @@
         justify-content: center;
     }
     
+    .hero-chat {
+        display: block;
+    }
     /* Секция проблем */
     .problems-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -255,23 +258,8 @@
         gap: 12px;
     }
     
-    
-    /* Чат карточка */
-    .chat-messages {
-        padding: 16px;
-        min-height: 250px;
-        max-height: 350px;
-    }
-    
-    .message-content {
-        max-width: 80%;
-        font-size: 13px;
-    }
-    
-    .message-avatar {
-        width: 28px;
-        height: 28px;
-        font-size: 12px;
+    .hero-chat {
+        display: none;
     }
     
     /* Секция проблем */
