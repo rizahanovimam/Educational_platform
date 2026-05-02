@@ -77,9 +77,6 @@
                     </div>
                     <div class="tool-content">
                         <div class="term-tags" id="termList">
-                            <span class="term-tag">sizeof()</span>
-                            <span class="term-tag">nullptr</span>
-                            <span class="term-tag">static_cast<>()</span>
                         </div>
                         <button class="btn btn-outline btn-sm add-term"  id="addTermBtn">+ Добавить</button>
                     </div>
@@ -112,14 +109,12 @@
                         <h3>Песочница</h3>
                         <div class="sandbox-buttons">
                             <button class="btn btn-outline btn-sm">Запустить</button>
-                            <!-- <button class="btn btn-outline btn-sm" onclick="checkCode()"><i class="fas fa-check"></i> Проверить</button> -->
                             <button class="btn btn-outline btn-sm">Копировать</button>
                         </div>
                     </div>
                     <textarea id="codeEditor" class="code-textarea" spellcheck="false">//Пишите код здесь...</textarea>
                     <div class="sandbox-output">
                         <span style="color: var(--gray);">Консоль: </span>
-                        <!-- <span id="outputText">ожидание запуска...</span> -->
                     </div>
                 </div>
 
@@ -147,7 +142,7 @@
                     </div>
                     <div class="chat-input-area">
                         <textarea id="chatInput" placeholder="Спроси у ИИ-преподавателя..."></textarea>
-                        <button class="send-btn" onclick="sendMessage()"> > </button>
+                        <button class="send-btn"> > </button>
                     </div>
                 </div>
             </div>
