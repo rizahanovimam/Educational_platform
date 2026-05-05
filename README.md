@@ -54,4 +54,4 @@
 
 Ознакомиться с работающим прототипом образовательной платформы можно по ссылке:
 
-👉 **[https://имяпользователя.github.io/educational-platform](https://имяпользователя.github.io/educational-platform)**
+👉 **https://rizahanovimam.github.io/Educational_platform/**
